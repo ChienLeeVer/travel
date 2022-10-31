@@ -79,7 +79,7 @@ export default {
             width: 25%;
             height: 0;
             padding-bottom:25%;
-
+            mragin-top: .2rem;
             position: relative;
             overflow: hidden;
             .icon-img {
