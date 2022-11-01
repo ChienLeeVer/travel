@@ -3,7 +3,7 @@
         <div class="recommend-title">热销推荐</div>
         <ul>
 
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img class="item-img" :src="item.imgUrl" alt="">
 
                 <div class="item-info">
@@ -19,34 +19,12 @@
 <script>
 export default {
     name: 'HomeRecommend',
+    props:{
+        list: Array
+    },
     data() {
         return {
-            recommendList : [
-                {
-                    id: '0001',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/2203/62/62bb1f47f6146658a3.water.jpg_200x200_d55fce9a.jpg',
-                    title: '世界之窗',
-                    desc: '来深圳必去的热门景点，在这里你可以看到世界各地的微型景点'
-                },
-                {
-                    id: '0002',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/2203/62/62bb1f47f6146658a3.water.jpg_200x200_d55fce9a.jpg',
-                    title: '东部华侨城',
-                    desc: '来深圳必去的热门景点，在这里你可以看到世界各地的微型景点'
-                },
-                {
-                    id: '0003',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/2203/62/62bb1f47f6146658a3.water.jpg_200x200_d55fce9a.jpg',
-                    title: '世界之窗',
-                    desc: '来深圳必去的热门景点，在这里你可以看到世界各地的微型景点'
-                },
-                {
-                    id: '0004',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/2203/62/62bb1f47f6146658a3.water.jpg_200x200_d55fce9a.jpg',
-                    title: '世界之窗',
-                    desc: '来深圳必去的热门景点，在这里你可以看到世界各地的微型景点'
-                },
-            ]
+
         }
     }
 }

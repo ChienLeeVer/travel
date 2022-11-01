@@ -96,7 +96,7 @@ export default {
                     left:50%;
                     transform: translate(-50%, -50%);
                     display: block;
-                    height: 80%;
+                    height: 60%;
                 }
             }
 

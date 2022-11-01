@@ -3,7 +3,7 @@
     <el-carousel
     height="150px"
     >
-      <el-carousel-item v-for="item in images" :key="item.id">
+      <el-carousel-item v-for="item in list" :key="item.id">
         <h3 class="small">
             <img :src="item.imgUrl" alt="">
         </h3>
@@ -15,34 +15,12 @@
 <script>
 export default {
     name:"HomeSwiper",
+    props:{
+        list: Array
+    },
     data () {
         return {
-            images:[
-                {
-                    id:'001',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/2210/d6/d66fd33564db0a77a3.water.jpg_600x330_b4b3fa42.jpg',
 
-                },
-                {
-                    id:'002',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/201309/24/6f15c7cc023de232c8d65eac.jpg_600x330_5d7e952c.jpg',
-
-                },
-                 {
-                    id:'003',
-                    imgUrl:'http://img1.qunarzz.com/sight/p0/1508/2e/d9363ce50a88c8c5ff5a138c67687cd4.water.jpg_600x330_28bda6b0.jpg',
-
-                },
-                 {
-                    id:'004',
-                    imgUrl: 'http://img1.qunarzz.com/sight/p0/2203/62/62bb1f47f6146658a3.water.jpg_600x330_6bce615b.jpg'
-
-                },
-
-
-
-
-            ]
         }
     }
 }

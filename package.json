@@ -26,6 +26,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "fastclick": "^1.0.6",
+    "postcss-px2rem": "^0.3.0",
     "sass": "^1.55.0",
     "sass-loader": "^10.3.1",
     "vue-router": "^3.6.5",
