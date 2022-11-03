@@ -4,13 +4,15 @@ import Vue from 'vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-    {
+const routes = [{
         path: '/',
         name: 'Home',
         component:()=>import('@/views/home/Home.vue')
-    }
-]
+    }, { 
+        path: '/city',
+        name: 'City',
+        component: ()=>import('@/views/city/City.vue')
+    }]
 
 const router = new VueRouter({
     routes
