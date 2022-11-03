@@ -46,8 +46,9 @@ export default {
     methods: {
         getHomeInfo () {
             axios.get('/api/index.json')
-            .then(this.getHomeInfoSucc).catch(err => {
-
+            .then(this.getHomeInfoSucc)
+            .catch(err=>{
+                
             })
         },
         getHomeInfoSucc (res) {
