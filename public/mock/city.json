@@ -1,0 +1,119 @@
+{
+    "ret": true,
+    "data": {
+        "hotCities": [
+        {
+            "id": 1,
+            "spell": "beijing",
+            "name": "北京"
+        }, {
+            "id": 2,
+            "spell": "shanghai",
+            "name": "上海"
+        }, {
+            "id": 3,
+            "spell": "guangzhou",
+            "name": "广州"
+        }, {
+            "id": 4,
+            "spell": "shenzhen",
+            "name": "深圳"
+        }, {
+            "id": 5,
+            "spell": "guiling",
+            "name": "桂林"
+        }, {
+            "id": 6,
+            "spell": "hangzhou",
+            "name": "杭州"
+        }],
+        "cities": {
+            "A": [
+                {
+                "id": 56,
+                "spell": "aba",
+                "name":"阿坝"
+            },{
+                "id": 57,
+                "spell": "akesu",
+                "name":"阿克苏"
+            },{
+                "id": 58,
+                "spell": "alashanmeng",
+                "name":"阿拉善盟"
+            },{
+                "id": 59,
+                "spell": "aletai",
+                "name":"阿勒泰"
+            }],
+            "B": [{
+                "id": 60,
+                "spell": "beijing",
+                "name":"北京"
+            },{
+                "id": 61,
+                "spell": "beijing",
+                "name":"北京"
+            },{
+                "id": 62,
+                "spell": "beijing",
+                "name":"北京"
+            },{
+                "id": 63,
+                "spell": "beijing",
+                "name":"北京"
+            }],
+            "C": [{
+                "id": 64,
+                "spell": "chengdu",
+                "name":"成都"
+            },{
+                "id": 65,
+                "spell": "chengdu",
+                "name":"成都"
+            },{
+                "id": 66,
+                "spell": "chengdu",
+                "name":"成都"
+            },{
+                "id": 67,
+                "spell": "chengdu",
+                "name":"成都"
+            }],
+            "D": [{
+                "id": 68,
+                "spell": "dongtinghu",
+                "name":"洞庭湖"
+            },{
+                "id": 69,
+                "spell": "dongtinghu",
+                "name":"洞庭湖"
+            },{
+                "id": 70,
+                "spell": "dongtinghu",
+                "name":"洞庭湖"
+            },{
+                "id": 71,
+                "spell": "dongtinghu",
+                "name":"洞庭湖"
+            }],
+            "E": [{
+                "id": 72,
+                "spell": "eerduosi",
+                "name":"鄂尔多斯"
+            },{
+                "id": 73,
+                "spell": "eerduosi",
+                "name":"鄂尔多斯"
+            },{
+                "id": 74,
+                "spell": "eerduosi",
+                "name":"鄂尔多斯"
+            },{
+                "id": 75,
+                "spell": "eerduosi",
+                "name":"鄂尔多斯"
+            }]
+        }
+    }
+}
