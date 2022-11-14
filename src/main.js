@@ -4,9 +4,9 @@ import router from './router/index'
 import store from './store'
 import { Carousel, CarouselItem } from 'element-ui'
 
+
 import '@/assets/styles/reset.css' //统一样式
 import '@/assets/styles/border.css' //解决1px问题
-
 import '@/assets/styles/iconfont.css'
 
 Vue.config.productionTip = false
