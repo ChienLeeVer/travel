@@ -113,6 +113,23 @@
                 "id": 75,
                 "spell": "eerduosi",
                 "name":"鄂尔多斯"
+            }],
+            "F": [{
+                "id": 76,
+                "spell": "fuzhou",
+                "name":"福州"
+            },{
+                "id": 77,
+                "spell": "fuzhou",
+                "name":"福州"
+            },{
+                "id": 78,
+                "spell": "fuzhou",
+                "name":"福州"
+            },{
+                "id": 79,
+                "spell": "fuzhou",
+                "name":"福州"
             }]
         }
     }
