@@ -1,5 +1,15 @@
+$browser: webkit, moz, o, ms;
+@mixin browserCss($name,$attrName,$gradient...) {
+    @each $browserItem in $browser {
+        #{$name}: -#{$browserItem}-#{$attrName}($gradient);
+    }
+        #{$name}: #{$attrName}($gradient);
+}
+
+
 @mixin ellipse() {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+

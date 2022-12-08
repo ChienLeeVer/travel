@@ -34,7 +34,6 @@
                     >
                         {{ innerItem.name }}
                     </div>
-
                 </div>
             </div>
         </div>
