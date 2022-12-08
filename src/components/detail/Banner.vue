@@ -1,21 +1,45 @@
 <template>
-    <div class="banner">
-        <img
-        class="banner-img"
-        src="http://img1.qunarzz.com/sight/p0/1707/81/81b18af22b775e20a3.img.jpg_600x330_1da3e0d8.jpg" alt="">
-        <div class="banner-info">
-            <div class="banner-tittle">欢乐海岸teamLab未来游乐园</div>
-            <div class="banner-number">
-                <span class="iconfont banner-icon">&#xe6c8;</span>
-                7
+    <div>
+        <div class="banner" @click="handleBannerClick">
+            <img
+            class="banner-img"
+            src="http://img1.qunarzz.com/sight/p0/1707/81/81b18af22b775e20a3.img.jpg_600x330_1da3e0d8.jpg" alt="">
+            <div class="banner-info">
+                <div class="banner-tittle">欢乐海岸teamLab未来游乐园</div>
+                <div class="banner-number">
+                    <span class="iconfont banner-icon">&#xe6c8;</span>
+                    7
+                </div>
             </div>
         </div>
+        <common-gallery
+        :imgs="imgs"
+        v-show="showGallery"
+        @hiddenGallery="handleBannerClick"
+        ></common-gallery>
     </div>
+
 </template>
 
 <script>
+import CommonGallery from 'common/gallery/Gallery'
+
 export default {
-    name: 'DetailBanner'
+    name: 'DetailBanner',
+    components: {
+        CommonGallery
+    },
+    data() {
+        return {
+            imgs: ["http://img1.qunarzz.com/sight/p0/2203/f6/f611f7ed30152568a3.water.jpg_r_800x800_a5adb2df.jpg"],
+            showGallery: false
+        }
+    },
+    methods: {
+        handleBannerClick() {
+            this.showGallery = !this.showGallery
+        }
+    }
 }
 </script>
 

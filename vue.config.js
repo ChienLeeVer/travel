@@ -37,6 +37,8 @@ module.exports = {
 		      // 修改它的选项...
 		      return options
 		    })*/
+        config.resolve.alias
+        .set('common', resolve('/src/common'))
 	},
 	// css相关配置
 	css: {
