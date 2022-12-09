@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="recommend-title">热销推荐</div>
+        <keep-alive>
         <ul>
-
             <router-link
             tag="li"
             class="item border-bottom"
@@ -19,6 +19,7 @@
                 </div>
             </router-link>
         </ul>
+        </keep-alive>
     </div>
 
 </template>
