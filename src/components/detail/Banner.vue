@@ -3,9 +3,10 @@
         <div class="banner" @click="handleBannerClick">
             <img
             class="banner-img"
-            src="http://img1.qunarzz.com/sight/p0/1707/81/81b18af22b775e20a3.img.jpg_600x330_1da3e0d8.jpg" alt="">
+            :src="bannerImg"
+            alt="">
             <div class="banner-info">
-                <div class="banner-tittle">欢乐海岸teamLab未来游乐园</div>
+                <div class="banner-tittle">{{ sightName }}</div>
                 <div class="banner-number">
                     <span class="iconfont banner-icon">&#xe6c8;</span>
                     7
@@ -13,7 +14,7 @@
             </div>
         </div>
         <common-gallery
-        :imgs="imgs"
+        :imgs="bannerImgs"
         v-show="showGallery"
         @hiddenGallery="handleBannerClick"
         ></common-gallery>
@@ -28,6 +29,17 @@ export default {
     name: 'DetailBanner',
     components: {
         CommonGallery
+    },
+    props: {
+        sightName: {
+            type: String
+        },
+        bannerImg: {
+            type: String
+        },
+        bannerImgs: {
+            type: Array
+        }
     },
     data() {
         return {

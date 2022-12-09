@@ -16,7 +16,7 @@
             <div class="iconfont header-fixed-back">&#xe624;</div>
 
             </router-link>
-            景点详情
+
         </div>
     </div>
 </template>
