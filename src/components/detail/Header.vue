@@ -34,22 +34,35 @@ export default {
     },
     methods: {
         handleScroll() {
-            const top = document.documentElement.scrollTop
-            if( top > 60 ) {
-                let opacity = top / 140
-                opacity > 1 ? 1 : opacity
-                this.opacityStyle = {
-                    opacity
-                }
-                this.showAbs = false
-            } else {
-                this.showAbs = true
-            }
+            let timer
+            let that = this
+            return (()=> {
+                clearTimeout(timer)
+                timer = setTimeout(()=>{
+                    const top = document.documentElement.scrollTop
+                    if( top > 60 ) {
+                        let opacity = top / 140
+                        opacity > 1 ? 1 : opacity
+                        that.opacityStyle = {
+                            opacity
+                        }
+                        that.showAbs = false
+                    } else {
+                        that.showAbs = true
+                    }
+                    clearInterval(timer)
+                }, 10)
+
+            })()
+
 
         }
     },
     activated() {
         window.addEventListener('scroll', this.handleScroll)
+    },
+    deactivated() {
+        window.removeEventListener('scroll', this.handleScroll)
     }
 }
 </script>
