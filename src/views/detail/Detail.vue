@@ -20,17 +20,15 @@
 </template>
 
 <script>
-import DetailBanner from '@/components/detail/Banner'
-import DetailHeader from '@/components/detail/Header'
-import DetailList from '@/components/detail/List'
+
 import axios from 'axios'
 
 export default {
     name: 'Detail',
     components: {
-        DetailBanner,
-        DetailHeader,
-        DetailList
+        DetailBanner: ()=> import('@/components/detail/Banner'),
+        DetailHeader: () => import('@/components/detail/Header'),
+        DetailList: () => import('@/components/detail/List')
     },
     data() {
         return {

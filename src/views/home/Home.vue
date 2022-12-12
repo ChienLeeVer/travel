@@ -20,22 +20,17 @@
     </div>
 </template>
 <script>
-import HomeHeader from '@/components/home/Header.vue'
-import HomeSwiper from '@/components/home/Swiper.vue'
-import HomeIcons from '@/components/home/Icons.vue'
-import HomeRecommend from '@/components/home/Recommend.vue'
-import HomeWeekend from '@/components/home/Weekend.vue'
 import axios from 'axios'
 import { mapState } from 'vuex'
 
 export default {
     name:'Home',
     components: {
-        HomeHeader,
-        HomeSwiper,
-        HomeIcons,
-        HomeRecommend,
-        HomeWeekend
+        HomeHeader: () => import('@/components/home/Header.vue'),
+        HomeSwiper: () => import('@/components/home/Swiper.vue'),
+        HomeIcons: () => import('@/components/home/Icons.vue'),
+        HomeRecommend: () => import('@/components/home/Recommend.vue'),
+        HomeWeekend: () => import('@/components/home/Weekend.vue')
     },
     data() {
         return {

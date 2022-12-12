@@ -18,19 +18,16 @@
 </template>
 
 <script>
-import CityHeader from '@/components/city/Header.vue'
-import CitySearch from '@/components/city/Search.vue'
-import CityList from '@/components/city/List.vue'
-import CityAlphabet from '@/components/city/Alphabet.vue'
+
 
 import axios from 'axios'
 export default {
     name: 'City',
     components: {
-        CityHeader,
-        CitySearch,
-        CityList,
-        CityAlphabet
+        CityHeader: () => import('@/components/city/Header'),
+        CitySearch: () => import('@/components/city/Search'),
+        CityList: () => import('@/components/city/List'),
+        CityAlphabet: () => import('@/components/city/Alphabet')
     },
     data () {
         return {
@@ -44,7 +41,7 @@ export default {
             axios.get('/api/city.json')
             .then(this.handleGetCityInfoSucc)
             .catch(err=>{
-                console.log(err);
+
             })
         },
         handleGetCityInfoSucc(res) {
